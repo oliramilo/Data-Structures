@@ -1,0 +1,36 @@
+Test Results for Sorts.java
+
+TYPE OF SORT:      TEST DATA:                          RESULT:(ms)        
+---------------------------------------------------------------------
+1. Bubble Sort     size=7000,ascending                 4538.66
+                   size=7000,descending                19954.0
+                   size=7000,random                    35711.66
+
+2. Insertion Sort  size=7000,ascending                 257.0
+                   size=7000,descending                7227.0
+                   size=7000,random                    4352.0
+
+3. Selection Sort  size=7000,ascending                 4157.33
+                   size=7000,descending                14276.33
+                   size=7000,random                    14469.66
+---------------------------------------------------------------------
+
+Conclusion:
+The results showed that Insertion sort performed with faster results in sorting
+arrays. The tested sort types all have a time complexity of O(n^2)
+
+In Insertion sort, the swap happens inside the while loop only if the current 
+array we are accessing is larger than the one above it so if this is true, the 
+swap occurs, else no swap occurs. For Selection sort, it needs to find the 
+smallest item in the array first then puts it in the proper order. This means
+that Selection sort will check more items in the array trying to find the 
+smallest one, in contrast with Insertion sort, there is less array accessing
+in insertion than selection which yields faster sorting results as shown in the
+test results above.
+
+For bubble sort, it is the slowest out of all the sorts tested, this is because
+of the double nested for loop and the swap occuring in the if statement
+meaning we will always have to check if the current array we're looking at is 
+unsorted compared to the one above even though parts of the array is already
+sorted which means, it will have more it will take longer to sort the
+array due to more array accessing and checking values.
