@@ -170,31 +170,4 @@ class Sorts
     	return newPivotIndex;	// TEMP - Replace this when you implement QuickSort
     }//doPartitioning
 
-    /**public static void main(String[] args)
-    {
-        String file = "RandomNames7000.csv";
-        System.out.println("Enter number 1-7000");
-        int[] array = FileIO.readFile(file);
-        System.out.println(Arrays.toString(array));
-        bubbleSort(array);
-        System.out.println("Array sorted bubble sort: " + Arrays.toString(array));
-        boolean isArranged = true;
-        for(int i= 0;i<array.length-1;i++)
-        {
-            if(array[i] > array[i+1])
-            {
-                isArranged = false;
-            }
-        }
-        if(isArranged)
-        {
-            System.out.println("Array is sorted correctly");
-        }
-        else
-        {
-            System.out.println("Array is not sorted correctly");
-        }
-
-    }**/
-
 }//end Sorts calss
