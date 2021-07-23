@@ -1,4 +1,6 @@
-README
+Social Network simulator is a simulation of user accounts and the probability of users following/liking other users/posts,
+Usage of Graphs and Depth/Breadth First searching to discover other users
+
 
 Usage:
 Interaction mode: java SocialSim -i
